@@ -44,6 +44,6 @@ void print_dynamic_list(dynamic_List* list) {
 	printf("\n");
 }
 
-int size_circular_list(dynamic_List* list) {
+int size_dynamic_list(dynamic_List* list) {
 	return list->size;
 }

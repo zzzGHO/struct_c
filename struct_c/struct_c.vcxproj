@@ -24,13 +24,17 @@
     <ClCompile Include="src\circular_list.cpp" />
     <ClCompile Include="src\double_list.cpp" />
     <ClCompile Include="src\dynamic_list.cpp" />
+    <ClCompile Include="src\queue.cpp" />
     <ClCompile Include="src\staticlist.cpp" />
+    <ClCompile Include="src\stcak.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dep\array.h" />
     <ClInclude Include="dep\circular_list.h" />
     <ClInclude Include="dep\double_list.h" />
     <ClInclude Include="dep\dynamic_list.h" />
+    <ClInclude Include="dep\queue.h" />
+    <ClInclude Include="dep\stack.h" />
     <ClInclude Include="dep\staticList.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -103,11 +107,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

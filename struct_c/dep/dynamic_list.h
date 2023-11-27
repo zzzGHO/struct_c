@@ -17,5 +17,5 @@ dynamic_List* InitDynamicList(void);
 void push_dynamic_list(dynamic_List* list, ElemType elem);
 void pop_dynamic_list(dynamic_List* list);
 void print_dynamic_list(dynamic_List* list);
-int size_circular_list(dynamic_List* list);
+int size_dynamic_list(dynamic_List* list);
 #endif // !__DYNAMICLIST_H__

@@ -4,7 +4,8 @@
 #include "dep/dynamic_list.h"
 #include "dep/double_list.h"
 #include "dep/circular_list.h"
-
+#include "dep/stack.h"
+#include "dep/queue.h"
 
 void Josephus(int n, int m);
 
@@ -52,6 +53,24 @@ int main() {
 	push_back_circular_list(head3, 6);
 	print_front_circular_list(head3, 15);
 	
+	printf("=================STACK==================\n");
+	stack* sta = InitStack();
+	push_stack(sta, 3);
+	push_stack(sta, 2);
+	push_stack(sta, 1);
+	print_stack(sta);
+	pop_stack(sta);
+	print_stack(sta);
+	printf("%d\n", get_top_stack(sta));
+	printf("=================QUEUE==================\n");
+	queue* qu = InitQueue();
+	push_queue(qu, 3);
+	push_queue(qu, 2);
+	push_queue(qu, 1);
+	print_queue(qu);
+	pop_queue(qu);
+	print_queue(qu);
+
 	return 0;
 }
 
